@@ -4,7 +4,7 @@ import { Card } from 'antd';
 const { Meta } = Card;
 
 const Product = (props) => {
-    const {product} = props
+    const {product,onAdd} = props
     return (
         <div>
 
@@ -16,7 +16,7 @@ const Product = (props) => {
                 <Meta title={product.name} description={product.price} />
                 
             </Card>
-            <div style={{background:"tomato",margin:"20px",textAlign:"center"}}>ADD TO CART</div>
+            <button onClick={()=> onAdd(product)}>Add to cart</button>
 
         </div>
     );

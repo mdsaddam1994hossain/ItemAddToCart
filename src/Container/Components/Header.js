@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div className="header">
             <div>
@@ -9,15 +9,8 @@ const Header = () => {
                 </a>
             </div>
             <div>
-                {/* <a href="#/cart">
-                    Cart{' '}
-                    {props.countCartItems ? (
-                        <button className="badge">{props.countCartItems}</button>
-                    ) : (
-                        ''
-                    )}
-                </a>{' '} */}
-                <a href="#" className="a">Cart</a>
+               
+                <a href="#" className="a">Cart-{props.countCartItems}</a>
                 <a href="#/signin" className="a"> SignIn</a>
             </div>
         </div>
