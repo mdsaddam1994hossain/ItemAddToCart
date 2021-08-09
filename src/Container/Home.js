@@ -59,7 +59,9 @@ const Home = () => {
                         cartItems={cartItems}
                         onAdd={onAdd}
                         onRemove={onRemove}
-                    />
+                    >
+                        
+                    </Basket>
                 </Col>
 
 

@@ -16,7 +16,8 @@ const Product = (props) => {
                 <Meta title={product.name} description={product.price} />
                 
             </Card>
-            <button onClick={()=> onAdd(product)}>Add to cart</button>
+           
+            <button onClick={() => onAdd(product)} >Add To Cart</button>
 
         </div>
     );

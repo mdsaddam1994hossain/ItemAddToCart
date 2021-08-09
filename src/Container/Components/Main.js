@@ -5,7 +5,7 @@ import Product from './Product';
 
 
 const Main = (props) => {
-  const {products} = props;
+  const {products,onAdd} = props;
   
     return (
         <div>
@@ -16,7 +16,7 @@ const Main = (props) => {
            {
              products.map((product,index)=>{
                  return(
-                     <Product product={product} key={product.id}  />
+                     <Product product={product} key={product.id} onAdd={onAdd} />
                  )
              })  
            }
