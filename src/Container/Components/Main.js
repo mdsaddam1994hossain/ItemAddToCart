@@ -16,7 +16,7 @@ const Main = (props) => {
            {
              products.map((product,index)=>{
                  return(
-                     <Product product={product} key={product.id} onAdd={onAdd} />
+                     <Product product={product} key={index} onAdd={onAdd} />
                  )
              })  
            }
